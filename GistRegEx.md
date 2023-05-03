@@ -49,4 +49,8 @@ These anchors force the expression to match the string from beginning to end.
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Emma Daily is a junior fullstack developer based in Los Angeles. After making the switch from the entertainment industry to programming she's excited to tackle new creative challenges.
+
+GitHub profile
+
+Email
