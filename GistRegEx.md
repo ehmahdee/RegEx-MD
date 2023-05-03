@@ -22,7 +22,13 @@ The username can be any combination of lowercase letters, numbers, underscores, 
 
 ### Anchors
 
+The caret (`^`) achor signifies the beginning of the string. It helps to identify the pattern needed (the username) appears at the start of the regular expression. 
+The dollar sign (`$`) anchor ends the string. It ensures that the TLD is the last part in the string and no other characters are included in the expression.
+These anchors force the expression to match the string from beginning to end. 
+
 ### Quantifiers
+
+
 
 ### Grouping Constructs
 
