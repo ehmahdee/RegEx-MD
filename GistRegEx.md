@@ -27,16 +27,21 @@ The dollar sign (`$`) anchor ends the string. It ensures that the TLD is the las
 These anchors force the expression to match the string from beginning to end. 
 
 ### Quantifiers
-
-
+ 
+ There are a couple of quantifiers in this expression. The plus sign expression (`+`) is used to match one or more characters in the username and domain within the email address. In `([a-z0-9_\.-]+) ` the username or domain name can contain any combinations of these characters.
+ The range quantifier `{2,6}` is used to match 2 to 6 characters in the TLD. The TLD can have any combination of lowercase letters as long as it is within 2 to 6 characters.
 
 ### Grouping Constructs
+
+
 
 ### Bracket Expressions
 
 ### Character Classes
 
 ### The OR Operator
+
+
 
 ### Flags
 
