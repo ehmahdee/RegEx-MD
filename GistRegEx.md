@@ -1,10 +1,11 @@
 # RegEx-MD
 
-Introductory paragraph (replace this with your text)
+In the following gist I will break down and describe components to match an email in a regex. 
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+The regular expression ```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/``` matches an email address that consists of a username followed by an "@" symbol, a domain name, and a TLD part. A TLD is short for Top-Level domain and denotes the type of organization the domain belongs to. These include ".com", ".edu", or ".org". 
+The username can be any combination of lowercase letters, numbers, underscores, dots, and hyphens.
 
 ## Table of Contents
 
