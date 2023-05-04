@@ -15,7 +15,6 @@ The username can be any combination of lowercase letters, numbers, underscores, 
 - [Bracket Expressions](#bracket-expressions)
 - [Character Classes](#character-classes)
 - [The OR Operator](#the-or-operator)
-- [Flags](#flags)
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
@@ -30,27 +29,30 @@ These anchors force the expression to match the string from beginning to end.
  
  There are a couple of quantifiers in this expression. The plus sign expression (`+`) is used to match one or more characters in the username and domain within the email address. In `([a-z0-9_\.-]+) ` the username or domain name can contain any combinations of these characters.
  The range quantifier `{2,6}` is used to match 2 to 6 characters in the TLD. The TLD can have any combination of lowercase letters as long as it is within 2 to 6 characters.
-
+ 
 ### Grouping Constructs
 
-
+Sections of the expression can be grouped using brackets (`[]`) and parentheses (`()`). This allows the segments to be repeated or edited as a whole portion. The section of `([a-z0-9_\.-]+)` is a grouped construct. 
 
 ### Bracket Expressions
 
+Bracket expressions can be used to find and match an individual character from a set. `{2,6}` is a bracket expression that matches 2 to 6 chracters from the preceding set `[a-z\.]`.
+
 ### Character Classes
+
+Character classes, like bracket expressions, can be used to match a character from a set. For example `[a-z0-9_\.-]` would match any lowercase letter, number, underscores, dot, or hyphen in the username.
+the `\d` is a shorthand that can be used to match any digit.
 
 ### The OR Operator
 
-
-
-### Flags
+Typically a pipe symbol (`|`) is used as an OR operator. However, in this expression can be OR created by the use of brackets (`[]`) and paretheses. Everything in this expression that is between brackets can be used to create an OR by using a few characters to create a range. The section of `[a-z\.]` denotes that the TLD can contain any letter a through z and/or a `.`. Using both of these tools, you are able to effectively group and compare parts of the expression.
 
 ### Character Escapes
 
+Character escapes are used to match special characters that have specific meanings in regular expressions. the backslash `\` in `\.` is used to escape the dot so the expression knows that we're targeting the dot specifically and not the dot's purpose. Other character escapes like `\d` matches any digit.
+
 ## Author
 
-Emma Daily is a junior fullstack developer based in Los Angeles. After making the switch from the entertainment industry to programming she's excited to tackle new creative challenges.
+Emma Daily is a junior fullstack developer based in Los Angeles. After making the switch from the film industry to programming, she's excited to tackle new creative challenges.
 
-GitHub profile
-
-Email
+If you have any questions, please email Emma at edaily94@gmail.com or visit her [GitHub profile](https://github.com/ehmahdee) to see her other projects.
